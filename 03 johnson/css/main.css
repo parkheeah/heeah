@@ -1,0 +1,1073 @@
+#wrap {
+    width: 100%;
+}
+
+#header {
+    width: auto;
+    height: 55px;
+    position: relative;
+}
+
+#header .logo .mLogo {
+    position: absolute;
+    top: 10px;
+    /*  top: 50%;
+    transform: translateY(-50%); */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35px;
+}
+
+#header .logo .wLogo {
+    display: none;
+}
+
+#header .util .logout {
+    display: none;
+}
+
+#header .util {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+
+}
+
+#header .util li {
+    float: left;
+    color: #61b6ef;
+    margin-right: 20px;
+
+}
+
+#header .util li:last-child {
+    margin-right: 0;
+}
+
+#header .fa-bars {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    color: #61b6ef;
+}
+
+#header .nav2 {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(60, 138, 228);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    line-height: 30px;
+    padding-top: 80px;
+}
+
+#header .gnb>li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#header .gnb>li span {
+    font-family: 'Merriweather', serif;
+}
+
+#header .gnb>li p {
+    border-bottom: 1px solid #fff;
+}
+
+#header .gnb>li:hover p {
+    color: pink;
+}
+
+.gnb>li .sub {
+    display: none;
+}
+
+.gnb>li .sub li {
+    /*  border-bottom: 1px solid rgb(240, 240, 240); */
+    font-size: 14px;
+
+}
+
+.gnb>li .sub li:hover a {
+    color: pink;
+}
+
+#header .cls {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background-color: transparent;
+    z-index: 500;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+/* ////////////////////////////////////// 모바일 header 끝 ///////////////////////////////////////////////////// */
+
+#mainV {
+    /*  max-width: calc(100% - 40px); */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
+
+#mainV img {
+    width: 100%;
+    height: auto;
+    /*  height: 100%;
+    transform: translateY(-10%); */
+}
+
+#mainV {
+    position: relative;
+    /*  height: 100vh;
+    overflow: hidden; */
+
+}
+
+#mainV .slick-dots {
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#mainV .slick-dots li {
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    font-size: 0;
+}
+
+#mainV .slick-dots button {
+    background-color: transparent;
+    /* background-color: #fff; */
+    width: 7px;
+    height: 7px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+#mainV .slick-dots li.slick-active {
+    background-color: #fad96b;
+}
+
+#mainV .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+
+#mainV .web2 {
+    /*  */
+}
+
+/* //////////////////////////////////// 모바일 mainV 끝 /////////////////////////////////////////////////////// */
+
+#cont1 {
+    position: relative;
+}
+
+#cont1 .moblie {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#cont1 h2 {
+    font-size: 18px;
+    font-family: 'MaruBuri-Regular';
+    color: #494949;
+    margin-bottom: 20px;
+}
+
+#cont1 p {
+    font-size: 12px;
+    font-family: 'MaruBuri-Regular';
+    color: #494949;
+    line-height: 1.5em;
+    font-weight: normal;
+}
+
+#cont1 .shopBtn {
+    background-color: #61b6ef;
+    width: 70px;
+    height: auto;
+    color: #fff;
+    margin: 30px auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    padding: 15px 17px;
+}
+
+#cont1 .shopBtn a {
+    display: block;
+    width: 70px;
+    height: auto;
+
+}
+
+#cont1 .shopBtn:hover {
+    background-color: #fad96b;
+}
+
+#cont1 .tabWeb {
+    display: none;
+}
+
+/* //////////////////////////////////////모바일 cont1111111 끝끝 //////////////////////////////////////////////////// */
+
+#cont2 .tabWeb2 {
+    display: none;
+}
+
+#cont2 .cont2Tit {
+    display: none;
+}
+
+#cont2 .moblie2 img {
+    width: 100%;
+    height: auto;
+}
+
+#cont2 .moblie2 {
+    /*  position: relative; */
+}
+
+#cont2 .moblie2 dl {
+    position: relative;
+}
+
+#cont2 .moblie2 dd {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #fff;
+    padding: 8px 17px;
+}
+
+#cont2 .moblie2 dd:hover {
+    border: 3px solid #61b6ef;
+    color: #61b6ef;
+    background-color: #fff;
+
+}
+
+/* /////////////////////////////////////모바일 cont22222222222 끝 끝  ////////////////////////////////////////////// */
+#cont3 {
+    display: none;
+}
+
+/* /////////////////////////////////////모바일 cont333 끝////////////////////////////////////////////////////// */
+#footer {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #61b6ef;
+    position: relative;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#footer .fmenu {
+    /*  padding: 20px; */
+    /*  margin: 20px auto; */
+    /*   position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+ */
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+#footer .fmenu li {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    padding-right: 29px;
+    margin: 20px auto;
+}
+
+#footer .fmenu li:hover {
+    color: #fad96b;
+}
+
+#footer .fmenu li:last-child {
+    padding-right: 0;
+}
+
+#footer .ftit {
+    width: 340px;
+    height: auto;
+}
+
+#footer .ftit p {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #fff;
+    font-size: 9px;
+    line-height: 1.5em;
+    padding: 0 10px 10px 10px;
+    /* font-weight: normal */
+}
+
+#footer .flogo {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+}
+
+#footer .flogo img {
+    /*  width: 100%;
+    height: auto; */
+    width: 72px;
+    height: 27px;
+
+}
+
+/* //////////////////////////////////////// 모바일 footer 끝 /////////////////////////////////////////////////////////// */
+
+@media all and (min-width:740px) {
+    #header {
+        height: 0;
+    }
+
+    #header .logo .mLogo {
+        display: none;
+    }
+
+    #header .logo .wLogo {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+    }
+
+    #header .logo img {
+        width: 211px;
+        height: auto;
+    }
+
+    #header .util {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        transform: translateY(0);
+        font-size: 25px;
+        z-index: 100;
+    }
+
+    #header .util li {
+        color: #fff;
+        margin-right: 30px;
+    }
+
+    #header .util li:last-child {
+        margin-right: 0;
+    }
+
+    #header .fa-bars {
+        color: #fff;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        transform: translateY(0);
+        font-size: 30px;
+        z-index: 100;
+    }
+
+    /* ////////////// 탭 740header 끝 ///////////////////////////////////// */
+    #mainV .slick-dots {
+        bottom: 10px;
+    }
+
+    #mainV .slick-dots button {
+        width: 14px;
+        height: 14px;
+        margin-right: 20px;
+    }
+
+
+    /* / ///////// 탭740  mainv 끝//////////////////// */
+
+    #cont1 .moblie {
+        display: none;
+    }
+
+    #cont1 .tabWeb {
+        display: block;
+    }
+
+    #cont1 .tabwebTit {
+        text-align: center;
+        margin: 56px auto;
+    }
+
+    #cont1 h2 {
+        font-family: 'Nanum Gothic', sans-serif;
+        color: #fad96b;
+        letter-spacing: 5px;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    #cont1 h3 {
+        color: #494949;
+        font-size: 30px;
+        font-weight: black;
+    }
+
+    #cont1 .promise ul {
+        width: 700px;
+        height: 200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #cont1 .promise li {
+        float: left;
+        margin-right: 62px;
+        /*  width: 700px;
+        height: auto;
+        margin: 0 auto; */
+    }
+
+    #cont1 .promise li:last-child {
+        margin-right: 0;
+    }
+
+    #cont1 .promise li img {
+        width: 117px;
+        height: auto;
+    }
+
+    #cont1 .promise dl {
+        line-height: 1.4em;
+    }
+
+    #cont1 .promise dl dt {
+        font-weight: bold;
+        color: #494949;
+        font-size: 10.75px;
+    }
+
+    #cont1 .promise dl dd {
+        color: #494949;
+        font-size: 13.14px;
+        font-family: 'MaruBuri-Regular';
+    }
+
+    /* //////////////탭 740 cont1 끝  //////////////////////////// */
+    #cont2 .moblie2 {
+        display: none;
+    }
+
+    #cont2 .cont2Tit {
+        display: block;
+        margin: 80px auto 58px auto;
+    }
+
+    #cont2 .cont2Tit h3 {
+        display: none;
+    }
+
+    #cont2 .cont2Tit h2 {
+        color: #fad96b;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    #cont2 .tabWeb2 {
+        display: block;
+        /* width: 340px;
+        height: 588px; */
+        width: 700px;
+        height: auto;
+        margin: 0 auto 43px auto;
+    }
+
+    #cont2 .tabWeb2 li {
+        float: left;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    #cont2 .tabWeb2 li:last-child {
+        margin-right: 0;
+    }
+
+    #cont2 .tabWeb2 div {
+        background-color: #fff;
+        /*  width: 120px;
+        height: 29.61px; */
+        border-radius: 30px;
+        text-align: center;
+        color: #494949;
+        font-size: 12.2px;
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'MaruBuri-Regular';
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+    #cont2 .tabWeb2 div:hover a {
+        color: #61b6ef;
+    }
+
+    #cont2 .tabWeb2 div a {
+        /*  background-color: #fad96b; */
+        padding: 5px 30px;
+
+    }
+
+    /* //////////////// 탭 740  cont2 끝 //////////////////////////////////////// */
+    #cont3 {
+        display: block;
+    }
+
+    #cont3 .aboutweb {
+        display: none;
+    }
+
+    #cont3 h2 {
+        margin: 100px auto 58px auto;
+        color: #fad96b;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    #cont3 .about ul li {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    #cont3 .about ul li:nth-child(2) {
+        flex-flow: row-reverse wrap;
+    }
+
+    #cont3 .about ul li:nth-child(4) {
+        flex-flow: row-reverse wrap;
+    }
+
+    #cont3 .about li p img {
+        width: 100%;
+        height: auto;
+    }
+
+    #cont3 .about li p {
+        width: 50%;
+    }
+
+    #cont3 .about li {
+        position: relative;
+    }
+
+    #cont3 .about dl {
+        color: #494949;
+        width: 50%;
+
+    }
+
+    #cont3 .about li:nth-child(1) dl {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 288px;
+        right: 50px
+    }
+
+    #cont3 .about li:nth-child(2) dl {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+        width: 288px;
+    }
+
+    #cont3 .about li:nth-child(3) dl {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 288px;
+        right: 50px
+    }
+
+    #cont3 .about li:nth-child(4) dl {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+        width: 288px;
+    }
+
+
+    #cont3 .about li dl dd {
+        font-size: 15px;
+    }
+
+    #cont3 .about li dd br {
+        display: none;
+    }
+
+    #cont3 .about dl dt {
+        font-family: 'MaruBuri-Regular';
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 1.5em;
+    }
+
+    #cont3 .about dl dd {
+        font-family: 'Cafe24Oneprettynight';
+        font-size: 11px;
+        padding: 10px 0 49px 0;
+    }
+
+
+    #cont3 .about .aboutBtn {
+        font-family: 'MaruBuri-Regular';
+        font-weight: bold;
+        font-size: 12px;
+
+    }
+
+    #cont3 .about .aboutBtn:hover {
+        color: #61b6ef;
+    }
+
+    #cont3 .about .aboutBtn a {
+        padding-right: 50px;
+        height: auto;
+        background: url(../img/web_arrow.jpg)no-repeat 70px center/ 25px 10px;
+    }
+
+    #cont3 .about .aboutBtn:hover a {
+        background-image: url(../img/barrow.jpg);
+    }
+
+
+    /*////////////////////////////탭 740  cont3 끝 //////////////////////////////////////////// */
+    #footer .fmenu {
+        width: 480px;
+        height: auto;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    #footer .fmenu li {
+        padding-right: 40px;
+        font-size: 16px;
+    }
+
+    #footer .ftit p {
+        font-size: 10px;
+        line-height: 3em;
+        padding: 20px 20px 20px 20px;
+    }
+
+    #footer .flogo {
+        top: 15px;
+        right: 20px;
+    }
+
+    #footer .flogo img {
+        width: 133px;
+        height: auto;
+    }
+
+    /* ////////////////// 740탭 footer 끝///////////////////// */
+    @media all and (min-width:1440px) {
+
+        #wrap {
+            /*  max-width: 1440px;
+            margin: 0 auto; */
+        }
+
+        #header .fa-bars {
+            display: none;
+        }
+
+        #header .logo .wLogo {
+            top: 60px;
+            left: 72px;
+            transform: translateX(0);
+        }
+
+        #header .logo img {
+            width: 298px;
+            height: auto;
+        }
+
+        #header .util li:nth-child(3) {
+            display: block;
+        }
+
+        #header .util {
+            top: 90px;
+            right: 80px;
+        }
+
+        #header .util li {
+            margin-right: 40px;
+        }
+
+        #header .gnb {
+
+            display: block;
+            position: absolute;
+            top: 90px;
+            left: 400px;
+            color: #fff;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+        }
+
+        #header .gnb span {
+            font-family: 'Merriweather', serif;
+        }
+
+        #header .gnb>li {
+            margin-right: 30px;
+
+        }
+
+        #header .gnb li .sub {
+            display: none;
+        }
+
+        #header .gnb>li p {
+            border-bottom: 0;
+        }
+
+        #header .nav2 {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: transparent;
+
+        }
+
+        #header .cls {
+            display: none;
+        }
+
+        /* /////////////////////1440 header 끝 ///////////////////////*/
+        #mainV {
+            transform: translateY(-10%);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #mainV img {
+            /* height: 100%; */
+            transform: translateY(-10%);
+        }
+
+        #mainV .slick-dots {
+            bottom: 30%;
+            left: 5%;
+            transform: translateX(0);
+
+        }
+
+        #mainV .slick-dots li {
+            width: 15px;
+            height: 15px;
+            margin-right: 15px;
+        }
+
+
+        /*/////////////1440 mainV 끝////////////////// */
+        #cont1 .tabwebTit {
+            margin: 200px auto 56px auto
+        }
+
+        #cont1 .promise li img {
+            width: 195px;
+            height: auto;
+        }
+
+        #cont1 .promise li {
+            margin-right: 105px;
+        }
+
+        #cont1 .promise ul {
+            width: 1170px;
+            height: 336px;
+            margin: 0 auto;
+        }
+
+        #cont1 .promise dl {
+            padding-top: 20px;
+            line-height: 2em;
+        }
+
+        #cont1 .promise dl dt {
+            font-size: 18px;
+        }
+
+        #cont1 .promise dl dd {
+            font-size: 22px;
+        }
+
+        /* ////////////////// 1440 cont1 끝 //////////////////////////// */
+
+        #cont2 .cont2Tit h3 {
+            display: block;
+        }
+
+        #cont2 {
+            /*  position: relative; */
+            /*  margin: 200px auto; */
+        }
+
+        #cont2 .cont2Meet {
+            /*  position: absolute; */
+            width: 1200px;
+            height: auto;
+            margin: 200px auto;
+            /*  float: left; */
+        }
+
+
+
+        #cont2 .cont2Tit {
+            /*     position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 105px;
+            margin: 0; */
+            float: left;
+        }
+
+        #cont2 .cont2Tit h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        #cont2 .cont2Tit h3 {
+            font-size: 36px;
+            color: #494949;
+        }
+
+
+
+        #cont2 .tabWeb2 ul li img {
+            width: 391px;
+            height: auto;
+        }
+
+        #cont2 .tabWeb2 {
+            width: 812px;
+            float: right;
+            /*  width: 812px;
+            margin: 0 auto; */
+            /* margin: 0 105px 0 528px; */
+            /*  display: flex;
+            width: 100%;
+            flex-flow: row-reverse wrap; */
+        }
+
+        #cont2 .tabWeb2 li {
+            margin-right: 30px;
+            float: left;
+        }
+
+        #cont2 .tabWeb2 div {
+            bottom: 53px;
+        }
+
+        /* //////////////////1440 cont2 끝 ////////////////////// */
+        #cont3 {
+            margin: 200px auto;
+        }
+
+        #cont3 h2 {
+            display: none;
+        }
+
+        #cont3 .abouttab {
+            display: none;
+        }
+
+        #cont3 .aboutweb {
+            display: block;
+        }
+
+        #cont3 .about dl dt {
+            font-size: 30px;
+        }
+
+        #cont3 .about dl dd {
+            font-size: 18px;
+        }
+
+        #cont3 .about .aboutBtn {
+            font-size: 18px;
+        }
+
+        #cont3 .about .aboutBtn a {
+            padding-right: 50px;
+            height: auto;
+            background: url(../img/web_arrow.jpg)no-repeat 100px center/ 30px 15px;
+        }
+
+        #cont3 .about li p img {
+            width: 570px;
+            height: auto;
+        }
+
+        #cont3 .about li {
+            margin-bottom: 200px;
+        }
+
+        #cont3 .about li:nth-child(1) p {
+            margin-left: 135px;
+        }
+
+        #cont3 .about li:nth-child(3) p {
+            margin-left: 135px;
+        }
+
+        #cont3 .about li:nth-child(1) dl {
+            width: 470px;
+            right: 135px;
+        }
+
+        #cont3 .about li:nth-child(2) dl {
+            left: 135px;
+            width: 450px;
+        }
+
+        #cont3 .about li:nth-child(3) dl {
+            width: 450px;
+            right: 135px;
+        }
+
+        #cont3 .about li:nth-child(4) dl {
+            left: 135px;
+            width: 450px;
+        }
+
+        #cont3 .about li dd br {
+            display: block;
+        }
+
+
+
+        /*//////////////1440 cont3 끝 /////////////////////*/
+        #footer {
+            /*   box-sizing: border-box; */
+        }
+
+        #footer .fmenu {
+            width: 1440px;
+            padding: 70px 0 70px 105px;
+            box-sizing: border-box;
+        }
+
+        #footer .fmenu li {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        #footer .ftit {
+            width: 1440px;
+        }
+
+        #footer .ftit p {
+            font-size: 16px;
+            padding: 0 0 70px 105px;
+        }
+
+        #footer .flogo img {
+            width: 282px;
+            height: auto;
+        }
+
+        #footer .flogo {
+            top: 70px;
+            right: 105px;
+        }
+
+        /* footer 끝 */
+
+        #cont1 {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        #cont2 {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        #cont3 {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        #footer {
+            /*   max-width: 1440px;
+            margin: 0 auto; */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

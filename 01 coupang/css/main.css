@@ -1,0 +1,459 @@
+#hearder {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header .banner {
+    width: 100%;
+    height: 60px;
+    background-color: #fec259;
+    color: #fff;
+    text-align: center;
+    font-family: 'SBAggroB';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+    /*   position: relative; */
+}
+
+.fa-xmark {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px; */
+    display: none;
+}
+
+.headerin {
+    width: 980px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#header h1 {
+    text-align: center;
+    margin: 40px auto;
+}
+
+#header h1 img {
+    width: 184px;
+    height: 41px;
+}
+
+.headerin .util {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    display: flex;
+}
+
+#header .util li {
+    margin-right: 20px;
+    font-size: 17.48px;
+}
+
+#header .util li:last-child {
+    margin-right: 0;
+}
+
+.headerin .util li::after {
+    content: '|';
+    margin-left: 15px;
+}
+
+.headerin .util li:last-child::after {
+    content: '';
+}
+
+.headerin .util li:hover {
+    color: #fec259;
+}
+
+.gnb {
+    display: flex;
+    font-size: 15.97px;
+    font-weight: bold;
+    height: 20px;
+    overflow: hidden;
+
+}
+
+.headerin .gnb li {
+    margin-right: 38px;
+}
+
+.gnb>li:nth-child(1) {
+    padding-left: 23px;
+    background: url(../img/menu.svg)no-repeat;
+}
+
+.gnb>li:hover {
+    color: #fec259;
+}
+
+.gnb>li .sub {
+    position: absolute;
+    top: 120px;
+    line-height: 2em;
+    width: 140px;
+    height: 520px;
+    z-index: 1;
+
+}
+
+.subBG {
+    width: 140px;
+    height: 520px;
+    background-color: #ff9a47;
+    font-size: 0;
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+
+}
+
+.searchBox {
+    position: absolute;
+    top: 75px;
+    right: 12%;
+}
+
+.searchBox .sc input {
+    border: none;
+    background-color: #bfbfbf;
+    width: 314.65px;
+    height: 28.21px;
+    border-radius: 40px;
+}
+
+.searchBox input::placeholder {
+    color: #fff;
+    font-size: 15.97px;
+    text-align: center;
+}
+
+/* ???? */
+.searchBox .submit {
+    background: url(../img/search.svg)no-repeat;
+    width: 37px;
+    height: 37px;
+    font-size: 0;
+}
+
+.icon {
+    display: flex;
+    font-size: 25px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+
+.icon li {
+    margin-right: 27px;
+}
+
+.icon li:last-child {
+    margin-right: 0;
+}
+
+.icon li:hover {
+    color: #fec259;
+}
+
+/* //////////////////header 끝//////////////////// */
+
+
+#mainV {
+    /* display: none; */
+    margin: 20px auto;
+}
+
+#mainV img {
+    width: 100%;
+}
+
+/* /////////////////////mainV 끝//////////////////// */
+#container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#container .cont1 {
+    margin: 90px auto;
+    width: 100%;
+    /*  border: 2px solid #000; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#container .h1 li:nth-child(1) {
+    font-size: 31.94px;
+    font-family: 'SBAggroB';
+}
+
+#container .cont1 .h1 li:nth-child(2) {
+    font-weight: bold;
+    font-size: 21.83px;
+}
+
+#container .h1 {
+    margin-bottom: 123px;
+}
+
+#container .timer p {
+    font-size: 15.44px;
+    font-weight: bold;
+}
+
+#container .timer div {
+    font-size: 79.86px;
+    font-family: 'SBAggroB';
+}
+
+/* ??? */
+#container .timer div span {
+    margin: -20px;
+
+}
+
+#container .timer div span:last-child {
+    margin: 0;
+}
+
+#container .cont1 .R .photo img {
+    width: 484.5px;
+    height: 362.53px;
+}
+
+#container .cont1 .R p {
+    font-weight: bold;
+    font-size: 21.3px;
+}
+
+#container .cont1 .R .txt1 {
+    padding-top: 25px;
+}
+
+#container .cont1 .R .txt2 {
+    margin: 12px 0 21px 0;
+
+}
+
+#container .cont1 .R .txt3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24.49px;
+    font-weight: bold;
+}
+
+#container .cont1 .R {
+    position: relative;
+}
+
+#container .cont1 .R .cartBtn {
+    position: absolute;
+    bottom: 163px;
+    right: 20px;
+    background: url(../img/cartBtn.png)0 0 / 42.59px 42.59px;
+    width: 42.59px;
+    height: 42.59px;
+}
+
+#container .cont1 .R .cartBtn:hover {
+    background-image: url(../img/cartBtn2.png);
+}
+
+/* ////////////cont1 끝 ///////////*/
+nav h2 {
+    font-family: 'SBAggroB';
+    font-size: 31.94px;
+    text-align: center;
+    margin: 54px auto;
+}
+
+nav h2 span {
+    display: inline-block;
+    background: url(../img/right.svg)no-repeat center 0/ 15px 25px;
+    width: 15px;
+    height: 25px;
+    font-size: 0;
+    margin: 50px;
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+nav>div {
+    margin: 100px auto;
+}
+
+nav .photo img {
+    width: 236.9px;
+    height: 289.59px;
+}
+
+nav p {
+    font-weight: bold;
+    font-size: 15.97px;
+    line-height: 2;
+}
+
+nav .txt3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 19.17px;
+}
+
+nav>div li {
+    position: relative;
+}
+
+nav ul li .cartBtn {
+    position: absolute;
+    bottom: 121px;
+    right: 20px;
+    background: url(../img/cartBtn.png) 0 0 / 42.59px;
+    width: 42.59px;
+    height: 42.59px;
+}
+
+nav ul li .cartBtn:hover {
+    background-image: url(../img/cartBtn2.png);
+}
+
+
+
+
+
+
+
+
+nav .btn {
+    position: absolute;
+}
+
+nav .btn .prv {
+    /*  background: url(../img/Rarrow.png)no-repeat 0 0 /44.71px 44.71px;
+    width: 44.71px;
+    height: 44.71px;
+    font-size: 0;
+      position: relative;
+    top: 0;
+    left: -50px;
+    margin-left: -50px;
+ */
+}
+
+nav .btn .nxt {}
+
+/* cont2.3,4,5 끝  */
+
+
+
+#footer {}
+
+#footer {
+    width: 980px;
+    margin: 0 auto;
+    border-top: 1px solid #c5c5c5;
+    display: flex;
+    /*  justify-content: space-around; */
+}
+
+#footer .fleft {
+    margin: 53px 82px;
+}
+
+#footer .fleft dl {
+    padding-bottom: 59px;
+    line-height: 1.5em;
+}
+
+#footer .fleft dt {
+    font-size: 12.78px;
+    font-family: 'SBAggroB';
+}
+
+#footer .fleft dd {
+    font-size: 21.3px;
+    font-family: 'SBAggroB';
+}
+
+#footer .fleft span {
+    font-size: 10.65px;
+    font-family: 'SBAggroL';
+}
+
+#footer .f1 {
+    font-size: 10.65px;
+    font-family: 'SBAggroL';
+    line-height: 2em;
+}
+
+/* //////////footer fleft 끝 ////////// */
+
+#footer .fright {
+    margin: 53px 0;
+    position: relative;
+}
+
+#footer .fright .fmenu {
+    display: flex;
+}
+
+#footer .fright .fmenu li {
+    margin-right: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 10.65px;
+
+}
+
+#footer .fright .fmenu li:last-child {
+    margin-right: 0;
+}
+
+#footer .fright .fmenu li:hover {
+    color: #fec259;
+}
+
+#footer .flogo img {
+    width: 184px;
+    height: 41px;
+}
+
+#footer .fsns {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 210px;
+}
+
+#footer .fsns img {
+    width: 21px;
+    height: 21px;
+}
+
+#footer .fsns li {
+    margin-right: 14px;
+}
+
+#footer .fsns li:last-child {
+    margin-right: 0;
+}
+
+#footer .f2 {
+    font-size: 9.58px;
+    padding-top: 24px;
+}
+
+#footer .f2 span {
+    font-weight: bold;
+}

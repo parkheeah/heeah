@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza hut</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/bb45d1cd22.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+        //DOM 생성 후
+        var originalID, cloneID; //인터벌 포인터
+        window.addEventListener('DOMContentLoaded', function () {
+
+            //롤링 배너 복제본 생성
+            let roller = document.querySelector('.roller');
+            roller.id = 'roller1';
+
+            let clone = roller.cloneNode(true);
+            clone.id = 'roller2';
+            document.querySelector('.wrap').appendChild(clone); //부착
+
+            //원본, 복제본 배너 위치 지정
+            document.querySelector('#roller1').style.left = '0px';
+            document.querySelector('#roller2').style.left = document.querySelector('.roller ul').offsetWidth + 'px';
+
+            //클래스 할당
+            roller.classList.add('original');
+            clone.classList.add('clone');
+
+            //인터벌 메서드로 애니메이션 생성
+            let rollerWidth = document.querySelector('.roller ul').offsetWidth;//회전 배너 너비값
+            let betweenDistance = 1;//이동 크기 - 정수여야 함
+            originalID = window.setInterval(betweenRollCallback, parseInt(1000 / 100), betweenDistance, document.querySelector('#roller1'));
+            cloneID = window.setInterval(betweenRollCallback, parseInt(1000 / 100), betweenDistance, document.querySelector('#roller2'));
+
+            //인터벌 애니메이션 함수(공용)
+            function betweenRollCallback(d, roller) {
+                let left = parseInt(roller.style.left);
+                roller.style.left = (left - d) + 'px';//이동
+                //조건부 위치 리셋
+                if (rollerWidth + (left - d) <= 0) {
+                    roller.style.left = rollerWidth + 'px';
+                }
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="wrap">
+        <header id="header">
+            <div class="headerin">
+                <h1 class="logo"><img src="img/logo.png"></h1>
+                <ul class="gnb">
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">이벤트&제휴</a></li>
+                    <li><a href="#">단체주문</a></li>
+                    <li><a href="#">창업안내</a></li>
+                </ul><!-- util -->
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">재주문</a></li>
+                </ul><!-- util -->
+            </div><!-- headerin -->
+        </header><!-- header -->
+        <section id="mainVisual">
+            <div class="arrow">
+                <a href="#about">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div><!-- arrow-down -->
+            <ul class="mainV">
+                <li class="mainV1"><a href="#"><img src="img/mainV1.jpg"></a></li>
+                <li class="mainV2"><a href="#"><img src="img/mainV2.jpg"></a></li>
+                <li class="mainV3"><a href="#"><img src="img/mainV3.jpg"></a></li>
+            </ul><!-- mainV -->
+            <!-- <div class="mbtn">
+                <div class="btn"><a href="#">주문하기 ></a></div>
+            </div> -->
+        </section><!-- mainVisual -->
+        <section id="order">
+            <div class="btn1"><a href="#">
+                    <div class="o_img"><img src="img/delivery.png"></div>
+                    <p>배달주문</p>
+                </a></div>
+            <div class="btn2"><a href="#">
+                    <div class="o_img"><img src="img/takeout.png"></div>
+                    <p>포장주문</p>
+                </a></div>
+        </section><!-- order -->
+        <section id="banner"><a href="#">
+                <div class="banner1"><img src="img/banner1.png"></div>
+                <div class="m_banner"><img src="img/m_banner.png"></div>
+                <!--  <div class="bBtn">
+                    <img src="img/cart.png">
+                </div> -->
+            </a></section><!-- banner -->
+        <section id="menu">
+            <h1>PIZZA MENU<span> > </span></h1>
+            <h2><a href="#">전체보기 ></a></h2>
+            <nav>
+                <div class="m1">
+                    <h1><a href="#">프리미엄 피자</a></h1>
+                    <ul class="menu_slider1">
+                        <li class="p1"><a href="#"><img src="img/m11.png"></a></li>
+                        <li class="p2"><a href="#"><img src="img/m22.png"></a></li>
+                        <li class="p3"><a href="#"><img src="img/m33.png"></a></li>
+                        <li class="p4"><a href="#"><img src="img/m44.png"></a></li>
+                        <li class="p5"><a href="#"><img src="img/m55.png"></a></li>
+                    </ul>
+                </div>
+                <div class="m2">
+                    <h1><a href="#">클래식 피자</a></h1>
+                    <ul class="menu_slider2">
+                        <li class="p1"><a href="#"><img src="img/m66.png"></a></li>
+                        <li class="p2"><a href="#"><img src="img/m77.png"></a></li>
+                        <li class="p3"><a href="#"><img src="img/m88.png"></a></li>
+                        <li class="p4"><a href="#"><img src="img/m99.png"></a></li>
+                        <li class="p5"><a href="#"><img src="img/m10.png"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </section><!-- menu -->
+        <section id="secret">
+            <div class="secret_h1">
+                <div class="simg"><img src="img/wlogo_txt.png"></div>
+                <p>맛의비밀?!</p>
+            </div>
+            <ul class="w_secret">
+                <li>
+                    <img src="img/secret1.png">
+                    <p>99%<br>자연치즈</p>
+                </li>
+                <li>
+                    <img src="img/secret2.png">
+                    <p>48시간<br>숙성도우</p>
+                </li>
+                <li>
+                    <img src="img/secret3.png">
+                    <p>신선한<br>천연토핑</p>
+                </li>
+                <li>
+                    <img src="img/secret4.png">
+                    <p>핸드메이드<br>수타피자</p>
+                </li>
+                <li>
+                    <img src="img/secret5.png">
+                    <p>직접 개발한<br>토마토소스</p>
+                </li>
+            </ul>
+            <div class="m_secret">
+                <img src="img/m_secret.png">
+            </div>
+        </section><!-- secret -->
+        <section id="benefit">
+            <div class="tit">
+                <div class="bene_img"><img src="img/wlogo_txt.png"></div>
+                <p>특별혜택</p>
+            </div>
+            <ul class="bimg">
+                <li><a href="#">
+                        <img src="img/benefit.png">
+                        <p>회원가입<br><span>10%</span>할인</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/benefit.png">
+                        <p><span>단체주문</span><br>할인혜택</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/benefit.png">
+                        <p>통신사,카드<br><span>제휴</span>할인</p>
+                    </a></li>
+            </ul>
+        </section><!-- benefit -->
+
+
+
+        <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+
+        <section id="roll">
+
+            <div class="container">
+                <div class="rollingbanner">
+                    <div class="wrap">
+                        <div class="roller">
+                            <ul>
+                                <li><a href="#"><img src="img/slider1.png"></a></li>
+                                <li><a href="#"><img src="img/slider2.png"></a></li>
+                                <li><a href="#"><img src="img/slider3.png"></a></li>
+                                <li><a href="#"><img src="img/slider4.png"></a></li>
+                                <li><a href="#"><img src="img/slider5.png"></a></li>
+                                <li><a href="#"><img src="img/slider6.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- roll -->
+
+
+        <footer id="footer">
+            <ul class="fsns">
+                <li><a href="#"><img src="img/sns1.png"></a></li>
+                <li><a href="#"><img src="img/sns2.png"></a></li>
+                <li><a href="#"><img src="img/sns3.png"></a></li>
+                <li><a href="#"><img src="img/sns4.png"></a></li>
+            </ul><!-- fsns -->
+            <div class="flogo">
+                <img src="img/wlogo_txt.png">
+            </div><!-- flogo -->
+            <div class="fmenu">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">창업안내</a></li>
+                </ul>
+            </div><!-- fmenu -->
+            <div class="number">
+                <h1>대표번호 1588-5588(운영시간 11:00~22:30)</h1>
+                <h2>Copyright ⓒ BY PIZZA HUT KOREA LTD. ALL RIGHT RESERVED</h2>
+            </div>
+        </footer><!-- footer -->
+    </div>
+
+</body>
+
+</html>
