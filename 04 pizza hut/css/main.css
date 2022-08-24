@@ -407,20 +407,6 @@
     color: #f02427;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     display: flex;
     height: 100%;
@@ -428,49 +414,33 @@
     align-items: center;
 }
 
-/* 배너 컨테이너 */
-.rollingbanner {
+#roll {
     width: 100%;
-    height: 320px;
 }
 
-
-
-.rollingbanner>.wrap {
-    position: relative;
+.img_wrap {
     width: 99.99%;
     height: 320px;
-    margin: 0 auto;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
-
-
-/* 애니메이션하는 요소 */
-.roller {
-    position: absolute;
+.roll_img {
+    width: 3840px;
     height: 100%;
-}
-
-.roller>ul {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    flex-wrap: nowrap;
+    animation: bannermove 30s linear infinite;
 }
 
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
 
 
 #footer {
